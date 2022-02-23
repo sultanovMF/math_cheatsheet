@@ -1,0 +1,173 @@
+\documentclass[twoside, a4paperpt]{extarticle}
+\usepackage{style}
+
+\begin{document}
+\section*{Простейшие первообразные}
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item $\displaystyle \int x^{n} d x=\cfrac{x^{n+1}}{n+1}+C(n \in R, n \neq-1 ; x \in R)$
+        \item $\displaystyle \int \cfrac{d x}{x}=\ln |x|+C(n=-1, x \neq 0)$.
+        \item $\displaystyle \int a^{x} d x=\cfrac{a^{x}}{\ln a}+C(a>0, a \neq 1 ; x \in R) ; $
+        \item $\displaystyle \int e^{x} d x=e^{x}+C$.
+        \item $\displaystyle \int \cos x d x=\sin x+C(x \in R)$;
+        \item $\displaystyle \int \sin x d x=-\cos x+C(x \in R)$;
+        \item $\displaystyle \int \cfrac{d x}{\cos ^{2} x}=\operatorname{tg} x+C\left(x \neq \cfrac{\pi}{2}+\pi n, n \in Z\right)$;
+        \item $\displaystyle \int \cfrac{d x}{\sin ^{2} x}=-\operatorname{ctg} x+C(x \neq \pi n, n \in Z)$.
+        \item $\displaystyle \int \cfrac{d x}{1+x^{2}}=\left\{\begin{array}{l}\operatorname{arctg} x+C \\ -\operatorname{arcctg} x+C\end{array}(x \in R ;\right.$
+        \item $\displaystyle \int \cfrac{d x}{x^{2}-a^{2}}=\cfrac{1}{2 a} \ln \left|\cfrac{x-a}{x+a}\right|+C(x \neq \pm a)$
+        \item $\displaystyle \int \cfrac{d x}{x^{2}-a^{2}}=\cfrac{1}{2 a} \ln \left|\cfrac{x-a}{x+a}\right|+C(x \neq \pm a)$.
+        \item $\displaystyle \int \cfrac{d x}{\sqrt{1-x^{2}}}=\left\{\begin{array}{l}\arcsin x+C \\ -\arccos x+C\end{array}(|x|<1) ;\right.$
+        \item $\displaystyle \int \cfrac{d x}{\sqrt{a^{2}-x^{2}}}=\left\{\begin{array}{l}\arcsin \cfrac{x}{a}+C \\ -\arccos \cfrac{x}{a}+C\end{array}(|x|<a) ;\right.$ 
+        \item $\displaystyle \int \operatorname{ch} x d x=\operatorname{sh} x+C(x \in R) ; \quad$
+        \item $\displaystyle \int \operatorname{sh} x d x=\operatorname{ch} x+C \quad(x \in R)$;
+        \item $\displaystyle \int \cfrac{d x}{\operatorname{ch}^{2} x}=\operatorname{th} x+C(x \in R)$
+        \item $\displaystyle \int \cfrac{d x}{\operatorname{sh}^{2} x}=\operatorname{cth} x+C(x \neq 0)$.
+    \end{itemize}
+\end{multicols}
+\begin{itemize}
+    \item $\displaystyle \int \cfrac{d x}{\sqrt{x^{2} \pm a^{2}}}=\ln \left|x+\sqrt{x^{2} \pm a^{2}}\right|+C\left(x^{2} \pm a^{2}>0\right) ;$
+    \item $\displaystyle \int \sqrt{a^{2}+x^{2}} d x=\cfrac{x}{2} \sqrt{a^{2}+x^{2}}+\cfrac{a^{2}}{2} \ln \left|x+\sqrt{a^{2}+x^{2}}\right|+C$.
+    \item $\displaystyle \int \sqrt{a^{2}-x^{2}} d x=\cfrac{x}{2} \sqrt{a^{2}-x^{2}}+\cfrac{a^{2}}{2} \arcsin \cfrac{x}{a}+C(|x| \leq a) ;$
+\end{itemize}
+
+\section*{Первообразные рациональных функций}
+\begin{itemize}
+    \item $ \displaystyle \int \cfrac{d x}{(x+a)(x+b)}=\cfrac{1}{a-b} \displaystyle \int \cfrac{(x+a)-(x+b)}{(x+a)(x+b)} d x $
+    \item $ \displaystyle \int \cfrac{d x}{(x+a)^{m}(x+b)^{n}}$ подстановка $ t=\cfrac{x+a}{x+b} $
+    \item $ \displaystyle \int \cfrac{A x+B}{a x^{2}+b x+c} d x$ выделение в числителе выражения,  равного производной знаменателя.
+    \item $I_{n}=\displaystyle \int \cfrac{d z}{\left(a^{2}+z^{2}\right)^{n}} = \cfrac{z}{2 a^{2}(n-1)\left(a^{2}+z^{2}\right)^{n-1}}+\cfrac{2 n-3}{2 a^{2}(n-1)} I_{n-1}$
+    \marginpar{$z$ здесь можно представлять как замену, проведенную, чтобы избавиться от полного квадратного уравнения с отрицательным дискриминантом}
+    
+    $I_{1}=\cfrac{1}{a} \operatorname{arctg} \cfrac{z}{a}+C$
+    
+    $I_{2}=\cfrac{z}{2 a^{2}\left(a^{2}+z^{2}\right)^{n-1}}+\cfrac{1}{2 a^{2}} I_{1}=\cfrac{z}{2 a^{2}\left(a^{2}+z^{2}\right)}+\cfrac{1}{2 a^{3}} \operatorname{arctg} \cfrac{z}{a}+C .$
+    
+    $I_{3}=\cfrac{z}{4 a^{2}\left(a^{2}+z^{2}\right)^{2}}+\cfrac{3}{4 a^{2}} I_{2}=\cfrac{z}{4 a^{2}\left(a^{2}+z^{2}\right)^{2}}+\cfrac{3 z}{8 a^{4}\left(a^{2}+z^{2}\right)}+\cfrac{3}{8 a^{5}} \operatorname{arctg} \cfrac{z}{a}+C$
+
+    \item Метод разбития на простейшие дроби с неопределенными коэффициентами.
+
+    $$\cfrac{x}{(x+1)(x-2)^{2}}=\cfrac{A}{x+1}+\cfrac{B}{x-2}+\cfrac{C}{(x-2)^{2}}$$\marginpar{$A, B, C$ можно найти решив СЛНУ.}
+    \newpage
+    \item Метод Остроградского: $\displaystyle \int \cfrac{P(x)}{Q(x)} d x=\cfrac{P_{1}(x)}{Q_{1}(x)}+\displaystyle \int \cfrac{P_{2}(x)}{Q_{2}(x)} d x .$
+    \marginpar{Подробнее есть страничка в википедии или в методичке Е.В. Хорошиловой "Неопреденный интеграл".}
+    Здесь $Q_{2}(x)$ представляет собой произведение всех неприводимых множителей многочлена $Q(x)$ без учёта кратности (то есть каждый неприводимый множитель многочлена $Q(x)$ встречается в разложении многочлена $Q_{2}(x)$ один раз), $Q_{1}(x)-$ произведение всех неприводимых множителей многочлена $Q(x)$ с пониженной на 1 кратностью (каждый неприводимый множитель многочлена $Q(x)$ кратности $n$ встречается в разложении многочлена $Q_{1}(x)$ $n-1$ раз).
+\end{itemize}
+
+\section*{Первообразные иррациональных функций}
+Здесь нод $R(x, y)$ понимаегся рациональная функция двух аргументов, т.е. отношение двух алгебраических многочленов соответственно степеней $n, m$ :
+$R(x, y)=\cfrac{P_{n}(x, y)}{Q_{m}(x, y)} .$
+
+\begin{itemize}
+    \item $\displaystyle \int R(x^m, \sqrt[n]{a x^m +b}) d x$ подстановка $t = \sqrt[n]{a x^m +b}$. При $m = 1: \quad x=\cfrac{t^{n}-b}{a}, \quad d x=\cfrac{n}{a}$ $t^{n-1} d t $.
+    \marginpar{$\displaystyle \int \cfrac{\sqrt{x+9}}{x} d x$}
+    \item $\displaystyle \int R\left(x, \sqrt[n]{\cfrac{a x+b}{c x+d}}\right) d x$ подставновка $t=\sqrt[n]{\cfrac{a x+b}{c x+d}} .$, $x=\cfrac{d t^{n}-b}{a-c t^{n}}$, $d x=\cfrac{(a d-b c) n t^{n-1}}{\left(a-c t^{n}\right)^{2}} d t$
+    \marginpar{$\displaystyle \int \sqrt[3]{\cfrac{2-x}{2+x}} \cdot \cfrac{d x}{(2-x)^{2}}$}
+    \item $\displaystyle \int R\left(x,\left(\cfrac{a x+b}{c x+d}\right)^{\cfrac{p_{1}}{q_{1}}}, \ldots,\left(\cfrac{a x+b}{c x+d}\right)^{\cfrac{p_{k}}{q_{k}}}\right) d x$  подстановка $t=\sqrt[n]{\cfrac{a x+b}{c x+d}}, $ где $ n=\operatorname{NOK}\left(q_{1}, q_{2}, \ldots, q_{k}\right)$
+    \marginpar{$\displaystyle \int \cfrac{x+\sqrt[3]{x^{2}+\sqrt[6]{x}}}{x(1+\sqrt[3]{x})} d x$}
+    
+    \item $\displaystyle \int(A x+B) \sqrt{a x^{2}+b x+c} d x, \quad \displaystyle \int \cfrac{(A x+B) d x}{\sqrt{a x^{2}+b x+c}}$ 
+    
+    В линейной части выразить производную квадратной и пихнуть под дифференциал.
+
+    \item $\displaystyle \int \cfrac{P_{n}(x) d x}{\sqrt{a x^{2}+b x+c}}$
+    
+    Интегралы данного вида, где $P_{n}(x)$ - алгебраический многочлен $n$-й степени, находятся с помощью тождества
+    $$
+    \displaystyle \int \cfrac{P_{n}(x) d x}{\sqrt{a x^{2}+b x+c}}=Q_{n-1}(x) \sqrt{a x^{2}+b x+c}+\lambda \displaystyle \int \cfrac{d x}{\sqrt{a x^{2}+b x+c}}
+    $$
+    где $Q_{n-1}(x)-$ многочлен $(n-1)$-й степени с неопределёнными коэффициентами, $\lambda$ - ещё один неопределённый коэффициент. 
+    
+    Дифференцируя это тождество и умножая на $\sqrt{a x^{2}+b x+c}$, получим равенство двух многочленов:
+    $$
+    P_{n}(x)=Q_{n-1}^{\prime}(x)\left(a x^{2}+b x+c\right)+\cfrac{1}{2} Q_{n-1}(x)(2 a x+b)+\lambda
+    $$
+    из которого методом неопределённых коэффициентов можно определить коэффициенты многочлена $Q_{n-1}(x)$ и число $\lambda$.
+
+    \item $\displaystyle \int \cfrac{d x}{(x-\alpha)^{n} \sqrt{a x^{2}+b x+c}}$ посдтановка $t = \cfrac{1}{x-a}$
+    
+    \item $\displaystyle \int \cfrac{d x}{\left(x^{2}+a\right)^{n} \cdot \sqrt{b x^{2}+c}}$ подстановка $t=\left(\sqrt{b x^{2}+c}\right)^{\prime}=\cfrac{b x}{\sqrt{b x^{2}+c}}$
+
+    \item $\displaystyle \int \cfrac{x d x}{\left(x^{2}+a\right)^{n} \cdot \sqrt{b x^{2}+c}}$ подстановка $t=\sqrt{b x^{2}+c}$
+    
+    \item $\displaystyle \int R\left(x, \sqrt{a^{2}-x^{2}}\right) d x, \displaystyle \int R\left(x, \sqrt{\cfrac{a-x}{a+x}}\right) d x$ и всякое такое решается тригонометрическими или гиперболическими подстановками.
+    \marginpar{$\displaystyle \int \cfrac{d x}{x \sqrt{a^{2}+x^{2}}}$}
+    \newpage
+    \item Интегралы вида $\displaystyle \int R\left(x, \sqrt{a x^{2}+b x+c}\right) d x$ в общем случае могут вычисляться с помощью рационализирующих подстановок Эйлера.
+    \begin{enumerate}
+        \item $a>0:$ $\sqrt{a x^{2}+b x+c}=t \pm x \sqrt{a}$
+        \marginpar{$\displaystyle \int \cfrac{d x}{x+\sqrt{x^{2}-x+1}}$}
+        $$
+        x=\cfrac{c-t^{2}}{\pm 2 t \sqrt{a}-b}, \quad d x=2 \cfrac{\mp t^{2} \sqrt{a}+b t \mp c \sqrt{a}}{(\pm 2 t \sqrt{a}-b)^{2}} d t
+        $$
+        \item $c>0:$ $\sqrt{a x^{2}+b x+c}=x t+\sqrt{c}$
+        \marginpar{$\displaystyle \int \cfrac{d x}{x+\sqrt{x^{2}-x+1}}$}
+        $$
+        x=\cfrac{\pm 2 t \sqrt{c}-b}{a-t^{2}}, \quad d x=2 \cfrac{\pm t^{2} \sqrt{c}-b t \pm a \sqrt{c}}{\left(a-t^{2}\right)^{2}} d t
+        $$
+        \item $b^{2}-4 a c>0:$ $\sqrt{a(x-\lambda)(x-\mu)}=t(x-\lambda)$
+        \marginpar{$\displaystyle \int \cfrac{d x}{1+\sqrt{1-2 x-x^{2}}}$}
+        $$
+        x=\cfrac{a x_{2}-x_{1} t^{2}}{a-t^{2}},\quad d x=2 \cfrac{a t\left(x_{2}-x_{1}\right)}{\left(a-t^{2}\right)^{2}} d t
+        $$
+    \end{enumerate}
+
+    \item Как доказал П.Л.Чебышёв, первообразная для функции $x^{m}\left(a+b x^{n}\right)^{p}$ является элементарной функцией только в следуюших трёх случаях:
+    \begin{enumerate}
+        \item $p$ - целое; подстановка $t=\sqrt[s]{x}$, где $s$ - HOK знаменателей дробей $m$ и $n$.
+        \marginpar{$\int \frac{\sqrt{x} d x}{(1+\sqrt[3]{x})^{2}}$}
+        \item $\cfrac{m+1}{n}$ целое; подстановка $t=\sqrt[s]{a+b x^{n}}$, где $s$ - знаменатель дроби $p$.
+        \marginpar{$\int \frac{x d x}{\sqrt{1+\sqrt[3]{x^{2}}}}$}
+        \item $\cfrac{m+1}{n}+p$ целое; подстановка $t=\sqrt[s]{a x^{-n}+b}$, где $s$ - заменатель дроби $p$
+        \marginpar{$\int \frac{d x}{\sqrt[4]{1+x^{4}}}$}
+    \end{enumerate}
+
+\end{itemize}
+% TODO: Доделать тригономерические функции
+\section*{Первообразные тригонометрических функций}
+\begin{itemize}
+    \item Некоторые интересные подстановки:
+    \begin{itemize}
+        \item $ t=\operatorname{tg} \cfrac{x}{2}, \quad \sin x=\cfrac{2 t}{1+t^{2}}, \quad \cos x=\cfrac{1-t^{2}}{1+t^{2}}, x=2 \operatorname{arctg} t, \quad d x=\cfrac{2 d t}{1+t^{2}}$
+        \marginpar{$\displaystyle \int \cfrac{d x}{a \sin x+b \cos x+c}$}
+    
+        \item $t = tg x, \quad \sin x=\cfrac{l}{\sqrt{1+t^{2}}}, \quad \cos x=\cfrac{1}{\sqrt{1+t^{2}}}, \quad x=\operatorname{arctg} t, \quad d x=\cfrac{d t}{1+t^{2}} .$
+        \marginpar{$\int \frac{d x}{a \sin ^{2} x+b \sin x \cdot \cos x+c \cos ^{2} x}$}
+    \end{itemize}
+
+    \item $\displaystyle \int \cfrac{a_{1} \sin x+b_{1} \cos x}{a \sin x+b \cos x} d x =\cdots = A x+B \ln |a \sin x+b \cos x| $
+    
+    $\displaystyle \int \cfrac{a_{1} \sin ^{2} x+2 b_{1} \sin x \cos x+c_{1} \cos ^{2} x}{a \sin x+b \cos x} d x$
+    
+    Представим числитель в виде линейной комбинации знаменателя и его производной: 
+    $$a_{1} \sin x+b_{1} \cos x=A(a \sin x+b \cos x)+B(a \cos x-b \sin x)$$
+
+    И методом неопределённых коэффициентов найдем $A, B$.
+
+    \item $\displaystyle \int \cfrac{a_{1} \sin x+b_{1} \cos x+c_{1}}{a \sin x+b \cos x+c} d x=A x+B \ln |a \sin x+b \cos x+c|+C \displaystyle \int \cfrac{d x}{a \sin x+b \cos x+c} $
+    
+    Представим числитель в виде линейной комбинации знаменателя и его производной: 
+    $$ a_{1} \sin x+b_{1} \cos x+c_{1}=A(a \sin x+b \cos x+c)+B(a \cos x-b \sin x)+C $$
+
+    И методом неопределённых коэффициентов найдем $A, B, C$.
+    
+    \item $\displaystyle \int \sin ^{n}(x) d x=-\cfrac{1}{n} \sin ^{(n-1)}(x) \cos (x)+\cfrac{(n-1)}{n} \displaystyle \int \sin ^{(n-2)} d x $
+    \item $\displaystyle \int \cos ^{n}(x) d x=\cfrac{1}{n} \cos ^{(n-1)}(x) \sin (x)+\cfrac{(n-1)}{n} \displaystyle \int \cos ^{(n-2)} d x $
+    \item $\displaystyle \int \cfrac{d x}{\sin ^{n} x}=I_{n}=-\displaystyle \int \cfrac{\cos x}{(n-1) \sin ^{n-1} x}+\cfrac{n-2}{n-1} I_{n-2} $
+    \item $\displaystyle \int \cfrac{d x}{\cos ^{n} x}=K_{n}=\displaystyle \int \cfrac{\sin x}{(n-1) \cos ^{n-1} x}+\cfrac{n-2}{n-1} K_{n-2} $
+    \item $\displaystyle \int \operatorname{tg}^{n} x d x  \cfrac{1}{n-1} \operatorname{tg}^{n-1} x-\displaystyle \int \operatorname{tg}^{n-2} x d x \quad n \neq 1 $
+    \item $\displaystyle \int \operatorname{ctg}^{n} x d x  =-\cfrac{1}{n-1} \operatorname{ctg}^{n-1} x-\displaystyle \int \operatorname{ctg}^{n-2} x d x \quad n \neq 1 $
+    \item $\displaystyle \int \sin ^{n} x \cos ^{m} x d x=-\cfrac{\sin ^{n-1} x \cos ^{m+1} x}{n+m}+\cfrac{n-1}{n+m} \displaystyle \int \sin ^{n-2} x \cos ^{m} x d x \quad m, n>0 $
+    \item $\displaystyle \int \sin ^{n} x \cos ^{m} x d x=\cfrac{\sin ^{n+1} x \cos ^{m-1} x}{n+m}+\cfrac{m-1}{n+m} \displaystyle \int \sin ^{n} x \cos ^{m-2} x d x \quad m, n>0$
+\end{itemize}
+
+\section*{Спасибо Вам, Галина Ильясовна!}
+\begin{itemize}
+    \item $I_{n}=\displaystyle \int e^{\alpha x} \sin ^{n} x d x=\cfrac{e^{\alpha x}}{\alpha^{2}+n^{2}} \sin ^{n-1} x(\alpha \sin x-n \cos x)+\cfrac{n(n-1)}{\alpha^{2}+n^{2}} I_{n-2}$
+    \item $\displaystyle \int  e^{ax} \sin(bx) dx = \cfrac{e^{ax}}{a^2 + b^2} (a \sin(bx) - b \cos(bx)$)
+    \item $\displaystyle \int  e^{ax} \cos(bx) dx = \cfrac{e^{ax}}{a^2 + b^2} (b \sin(bx) + a \cos(bx)$)
+    \item $\displaystyle \int \cfrac{d x}{(a^2 + x^2)^{m+1}} = \cfrac{1}{2 m a^2} \left[ (2m - 1) \displaystyle \int \cfrac{d x} {(a^2 + x^2)^m} + \cfrac{x}{(a^2 + x^2)^m}\right]$
+\end{itemize}
+
+
+\end{document}

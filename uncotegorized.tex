@@ -1,0 +1,109 @@
+\documentclass[twoside, a4paperpt]{extarticle}
+\usepackage{style}
+
+
+\begin{document}
+\section*{Таблица БМФ при $x \rightarrow 0$}
+\begin{multicols}{2}
+    \begin{itemize}
+        \item $\sin x \sim x$
+    
+        \item $\tan x \sim x$
+    
+        \item $\arcsin x \sim x$
+    
+        \item $\arctan x \sim x$
+    
+        \item $\cos x \sim 1-\cfrac{x^{2}}{2}$
+    
+        \item $\ln (1+x) \sim x$
+    
+        \item $\log _{a}(1+x) \sim \cfrac{x}{\ln a}$
+    
+        \item $e^{x}-1 \sim x$
+    
+        \item $a^{x}-1 \sim x \ln a$
+    
+        \item  $(1+x)^{a}-1 \sim a x$
+    \end{itemize}
+\end{multicols}
+\section*{Производные}
+\begin{multicols}{2}
+    \begin{itemize}
+        \item $\left(x^{n}\right)^{\prime}=n x^{n-1}$
+        \item $\left(a^{x}\right)^{\prime}=a^{x} \cdot \ln a$
+        \item $\left(e^{x}\right)^{\prime}=e^{x}$
+        \item $\left(\log _{a} u\right)^{\prime}=\cfrac{u^{\prime}}{u \ln a}, \quad(\ln u)^{\prime}=\cfrac{u^{\prime}}{u}$
+        \item $(\sin x)^{\prime}=\cos x, \quad(\cos x)^{\prime}=-\sin x$
+        \item $(\sqrt{u})^{\prime}=\cfrac{u^{\prime}}{2 \sqrt{u}}$
+        \item $(\operatorname{tgu})^{\prime}=\cfrac{u^{\prime}}{\cos ^{2} u}, \quad(c t g x)^{\prime}=-\cfrac{u^{\prime}}{\sin ^{2} u}$
+        \item $(\arcsin x)^{\prime}=\cfrac{1}{\sqrt{1-x^{2}}}$
+        \item $(\arccos x)^{\prime}=-\cfrac{1}{\sqrt{1-x}}$
+        \item $(\operatorname{arctg} x)^{\prime}=\cfrac{1}{1+x^{2}}$
+        \item $(\operatorname{arcctg} x)^{\prime}=-\cfrac{1}{1+x^{2}}$
+        \item $(\operatorname{sh} x)^{\prime}=\operatorname{ch} x$
+        \item $(\operatorname{ch} x)^{\prime}=\operatorname{sh} x$
+        \item $(t h x)^{\prime}=\cfrac{1}{c h^{2} x}$
+        \item $(\text { cth } x)^{\prime}=-\cfrac{1}{\operatorname{sh}^{2} x}$
+        \item $\left(x^{x}\right)^{\prime}=x^{x} \cdot(1+\ln x)$
+        \item $\left(\ln \left(x+\sqrt{1+x^{2}}\right)\right)^{\prime}=\cfrac{1}{\sqrt{1+x^{2}}}$
+        \item $\left(\cfrac{1}{2} \ln \left(\cfrac{1+x}{1-x}\right)\right)^{\prime}=\cfrac{1}{1-x^{2}}$
+        \item $(1 / x)^{(n)}=\cfrac{(-1)^{n} \cdot n !}{x^{n+1}}$
+        \item $\left(a^{x}\right)^{(n)}=a^{x} \cdot \ln ^{n} x$
+        \item $(\sin x)^{(n)}=\sin \left(x+\cfrac{\pi n}{2}\right)$
+        \item $(\cos x)^{(n)}=\cos \left(x+\cfrac{\pi n}{2}\right)$
+        \item $(\ln x)^{(n)}=\cfrac{(-1)^{(n-1)} \cdot(n-1) !}{x^{n}}$
+    \end{itemize}
+\end{multicols}
+\begin{itemize}
+    \item $\left(u^{v}\right)^{\prime}=v \cdot u^{v-1} \cdot u^{\prime}+u^{v} \cdot \ln u \cdot v^{\prime}$ - $\left(\sqrt{1+x^{2}}\right)^{\prime}=\cfrac{x}{\sqrt{x^{2}+1}}$
+\end{itemize}
+
+\section*{Формулы из приложений определённого интеграла}
+
+\subsection*{Площадь}
+\begin{itemize}
+
+    \item  Типикал $S=\displaystyle \int_{a}^{b} y(x) d x$
+
+    \item  Типикалі, но с двумя кривыми $S=\displaystyle \int_{a}^{b}\left(y_{2}(x)-y_{1}(x)\right) d x$
+
+    \item  Параметрическое
+
+    \begin{itemize}
+        \item $ S=-\displaystyle \int_{T_{0}}^{T} y(t) x^{\prime}(t) d t $
+
+        \item $ S=\displaystyle \int_{T_{0}}^{T} x(t) y^{\prime}(t) d t  $
+    
+        \item $ S=\cfrac{1}{2} \displaystyle \int_{T_{0}}^{T}\left(x(t) y^{\prime}(t)-y(t) x^{\prime}(t)\right) d t $
+    \end{itemize}
+
+
+
+    \item  Явная полярка $S=\cfrac{1}{2} \displaystyle \int_{\alpha}^{\beta} r^{2}(\varphi) d \varphi$
+
+    \item  Параметрическая полярка $S=\cfrac{1}{2} \displaystyle \int_{T_{0}}^{T} r^{2}(t) \varphi^{\prime}(t) d t$
+\end{itemize}
+\subsection*{Вычисление длины дуги}
+\begin{itemize}
+    \item  Декартовые $L=\displaystyle \int_{a}^{b} \sqrt{1+\left(f^{\prime}(x)\right)^{2}} d x$
+    \item  Параметр $L=\displaystyle \int_{t_{0}}^{t_{1}} \sqrt{\left(\varphi^{\prime}(t)\right)^{2}+\left(\psi^{\prime}(t)\right)^{2}} d t$
+    \item  Полярка $L=\displaystyle \int_{\alpha}^{\beta} \sqrt{\left(r^{\prime}(\varphi)\right)^{2}+(r(\varphi))^{2}} d \varphi .$
+\end{itemize}
+
+\subsection*{Вычисление объемов тел вращения}
+\begin{itemize}
+    \item $V=\displaystyle \int_{a}^{b} S(x) d x$
+    \item $V_{O X}=\pi \displaystyle \int_{a}^{b} f^{2}(x) d x$
+    \item $V_{O Y}=2 \pi \displaystyle \int_{a}^{b} x f(x) d x$
+    \item Сектор в полярке $V=\cfrac{2}{3} \pi \displaystyle \int_{\alpha}^{\beta} r^{3}(\varphi) \sin \varphi d \varphi$ 
+\end{itemize}
+
+\subsection*{Площадь поверхности вращения}
+\begin{itemize}
+    \item $S_{O X}=2 \pi \displaystyle \int_{a}^{b}|f(x)| d l=2 \pi \displaystyle \int_{a}^{b} f(x) \sqrt{1+(f \prime(x))^{2}} d x$
+    \item $S_{O X}=2 \pi \displaystyle \int_{t_{0}}^{t_{1}} \psi(t) \sqrt{(\psi \boldsymbol{\gamma}(t))^{2}+(\varphi \prime(t))^{2}} d t$
+    \item $S_{O X}=2 \pi \displaystyle \int_{\alpha}^{\beta} r(\varphi)|\sin \varphi| \sqrt{r^{2}(\varphi)+(r \prime(\varphi))^{2}} d \varphi$
+\end{itemize}
+
+\end{document}
