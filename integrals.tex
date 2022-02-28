@@ -14,9 +14,8 @@
         \item $\displaystyle \int \sin x d x=-\cos x+C(x \in R)$;
         \item $\displaystyle \int \cfrac{d x}{\cos ^{2} x}=\operatorname{tg} x+C\left(x \neq \cfrac{\pi}{2}+\pi n, n \in Z\right)$;
         \item $\displaystyle \int \cfrac{d x}{\sin ^{2} x}=-\operatorname{ctg} x+C(x \neq \pi n, n \in Z)$.
-        \item $\displaystyle \int \cfrac{d x}{1+x^{2}}=\left\{\begin{array}{l}\operatorname{arctg} x+C \\ -\operatorname{arcctg} x+C\end{array}(x \in R ;\right.$
         \item $\displaystyle \int \cfrac{d x}{x^{2}-a^{2}}=\cfrac{1}{2 a} \ln \left|\cfrac{x-a}{x+a}\right|+C(x \neq \pm a)$
-        \item $\displaystyle \int \cfrac{d x}{x^{2}-a^{2}}=\cfrac{1}{2 a} \ln \left|\cfrac{x-a}{x+a}\right|+C(x \neq \pm a)$.
+        \item $\displaystyle \int \cfrac{d x}{x^{2}+a^{2}}=\cfrac{1}{a} \arctan \left(\cfrac{x}{a}\right)+C$.
         \item $\displaystyle \int \cfrac{d x}{\sqrt{1-x^{2}}}=\left\{\begin{array}{l}\arcsin x+C \\ -\arccos x+C\end{array}(|x|<1) ;\right.$
         \item $\displaystyle \int \cfrac{d x}{\sqrt{a^{2}-x^{2}}}=\left\{\begin{array}{l}\arcsin \cfrac{x}{a}+C \\ -\arccos \cfrac{x}{a}+C\end{array}(|x|<a) ;\right.$ 
         \item $\displaystyle \int \operatorname{ch} x d x=\operatorname{sh} x+C(x \in R) ; \quad$
@@ -46,8 +45,8 @@
     $I_{3}=\cfrac{z}{4 a^{2}\left(a^{2}+z^{2}\right)^{2}}+\cfrac{3}{4 a^{2}} I_{2}=\cfrac{z}{4 a^{2}\left(a^{2}+z^{2}\right)^{2}}+\cfrac{3 z}{8 a^{4}\left(a^{2}+z^{2}\right)}+\cfrac{3}{8 a^{5}} \operatorname{arctg} \cfrac{z}{a}+C$
 
     \item Метод разбития на простейшие дроби с неопределенными коэффициентами.
-
-    $$\cfrac{x}{(x+1)(x-2)^{2}}=\cfrac{A}{x+1}+\cfrac{B}{x-2}+\cfrac{C}{(x-2)^{2}}$$\marginpar{$A, B, C$ можно найти решив СЛНУ.}
+    \marginpar{$A, B, C$ можно найти решив СЛНУ.}
+    $$\cfrac{x}{(x+1)(x-2)^{2}}=\cfrac{A}{x+1}+\cfrac{B}{x-2}+\cfrac{C}{(x-2)^{2}}$$
     \newpage
     \item Метод Остроградского: $\displaystyle \int \cfrac{P(x)}{Q(x)} d x=\cfrac{P_{1}(x)}{Q_{1}(x)}+\displaystyle \int \cfrac{P_{2}(x)}{Q_{2}(x)} d x .$
     \marginpar{Подробнее есть страничка в википедии или в методичке Е.В. Хорошиловой "Неопреденный интеграл".}
@@ -147,7 +146,7 @@ $R(x, y)=\cfrac{P_{n}(x, y)}{Q_{m}(x, y)} .$
     \item $\displaystyle \int \cfrac{a_{1} \sin x+b_{1} \cos x+c_{1}}{a \sin x+b \cos x+c} d x=A x+B \ln |a \sin x+b \cos x+c|+C \displaystyle \int \cfrac{d x}{a \sin x+b \cos x+c} $
     
     Представим числитель в виде линейной комбинации знаменателя и его производной: 
-    $$ a_{1} \sin x+b_{1} \cos x+c_{1}=A(a \sin x+b \cos x+c)+B(a \cos x-b \sin x)+C $$
+    $$ a_{1} \sin x+b_{1} \cos x+c_{1}=A(a \sin x+b \cos x+c)+B(a \cos x-b \sin x + c)+C $$
 
     И методом неопределённых коэффициентов найдем $A, B, C$.
     
