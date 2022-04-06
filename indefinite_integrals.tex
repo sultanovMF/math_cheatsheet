@@ -1,8 +1,10 @@
-\documentclass[twoside, a4paperpt]{extarticle}
+\documentclass[twoside, a4paperpt, fleqn]{extarticle}
 \usepackage{style}
 
 \begin{document}
-\section*{Простейшие первообразные}
+\section{Первообразные}
+
+\subsection*{Простейшие первообразные}
 
 \begin{multicols}{2}
     \begin{itemize}
@@ -29,7 +31,7 @@
     \item $\displaystyle \int \sqrt{a^{2}-x^{2}} d x=\cfrac{x}{2} \sqrt{a^{2}-x^{2}}+\cfrac{a^{2}}{2} \arcsin \cfrac{x}{a}+C(|x| \leq a) ;$
 \end{itemize}
 
-\section*{Первообразные рациональных функций}
+\subsection*{Первообразные рациональных функций}
 \begin{itemize}
     \item $ \displaystyle \int \cfrac{d x}{(x+a)(x+b)}=\cfrac{1}{a-b} \displaystyle \int \cfrac{(x+a)-(x+b)}{(x+a)(x+b)} d x $
     \item $ \displaystyle \int \cfrac{d x}{(x+a)^{m}(x+b)^{n}}$ подстановка $ t=\cfrac{x+a}{x+b} $
@@ -52,7 +54,7 @@
     Здесь $Q_{2}(x)$ представляет собой произведение всех неприводимых множителей многочлена $Q(x)$ без учёта кратности (то есть каждый неприводимый множитель многочлена $Q(x)$ встречается в разложении многочлена $Q_{2}(x)$ один раз), $Q_{1}(x)-$ произведение всех неприводимых множителей многочлена $Q(x)$ с пониженной на 1 кратностью (каждый неприводимый множитель многочлена $Q(x)$ кратности $n$ встречается в разложении многочлена $Q_{1}(x)$ $n-1$ раз).
 \end{itemize}
 
-\section*{Первообразные иррациональных функций}
+\subsection*{Первообразные иррациональных функций}
 Здесь нод $R(x, y)$ понимаегся рациональная функция двух аргументов, т.е. отношение двух алгебраических многочленов соответственно степеней $n, m$ :
 $R(x, y)=\cfrac{P_{n}(x, y)}{Q_{m}(x, y)} .$
 
@@ -122,7 +124,7 @@ $R(x, y)=\cfrac{P_{n}(x, y)}{Q_{m}(x, y)} .$
 
 \end{itemize}
 % TODO: Доделать тригономерические функции
-\section*{Первообразные тригонометрических функций}
+\subsection*{Первообразные тригонометрических функций}
 \begin{itemize}
     \item Некоторые интересные подстановки:
     \begin{itemize}
@@ -159,12 +161,24 @@ $R(x, y)=\cfrac{P_{n}(x, y)}{Q_{m}(x, y)} .$
     \item $\displaystyle \int \sin ^{n} x \cos ^{m} x d x=\cfrac{\sin ^{n+1} x \cos ^{m-1} x}{n+m}+\cfrac{m-1}{n+m} \displaystyle \int \sin ^{n} x \cos ^{m-2} x d x \quad m, n>0$
 \end{itemize}
 
-\section*{Спасибо Вам, Галина Ильясовна!}
+\subsection*{Спасибо Вам, Галина Ильясовна!}
 \begin{itemize}
     \item $I_{n}=\displaystyle \int e^{\alpha x} \sin ^{n} x d x=\cfrac{e^{\alpha x}}{\alpha^{2}+n^{2}} \sin ^{n-1} x(\alpha \sin x-n \cos x)+\cfrac{n(n-1)}{\alpha^{2}+n^{2}} I_{n-2}$
     \item $\displaystyle \int  e^{ax} \sin(bx) dx = \cfrac{e^{ax}}{a^2 + b^2} (a \sin(bx) - b \cos(bx)$)
+    
+    % \begin{flalign*}
+    %     \int e^{a x} \cos (b x) d x &=\operatorname{Re}\left(\int e^{a x} e^{i b x} d x\right) \\
+    %     =\operatorname{Re}\left(\int e^{(a+i b) x} d x\right) \\
+    %     =\operatorname{Re}\left(\frac{1}{a+i b} e^{(a+i b) x}\right)+C \\
+    %     =\operatorname{Re}\left(\frac{a-i b}{a^{2}+b^{2}} e^{a x} e^{i b x}\right)+C \\
+    %     =\operatorname{Re}\left(\frac{a-i b}{a^{2}+b^{2}} e^{a x}(\cos (b x)+i \sin (b x))\right)+C \\
+    %     =\frac{1}{a^{2}+b^{2}} e^{a x}(a \cos (b x)+b \sin (b x))+C        
+    % \end{flalign*}
+
+
     \item $\displaystyle \int  e^{ax} \cos(bx) dx = \cfrac{e^{ax}}{a^2 + b^2} (b \sin(bx) + a \cos(bx)$)
     \item $\displaystyle \int \cfrac{d x}{(a^2 + x^2)^{m+1}} = \cfrac{1}{2 m a^2} \left[ (2m - 1) \displaystyle \int \cfrac{d x} {(a^2 + x^2)^m} + \cfrac{x}{(a^2 + x^2)^m}\right]$
+    % \int 1 / (1 - cosx) dx
 \end{itemize}
 
 
