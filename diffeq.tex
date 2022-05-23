@@ -1,16 +1,105 @@
 \documentclass[twoside, a4paperpt, fleqn]{extarticle}
 \usepackage{style}
 
-
-
 \begin{document}
-    TODO: сделать выжимку из всех pdf'ок снизу
-    \includepdf[pages={11}]{./source/FilippovDU.pdf}
-    \includepdf[pages={18,19}]{./source/FilippovDU.pdf}
-    \includepdf[pages={21,22}]{./source/FilippovDU.pdf}
-    \includepdf[pages={26,27,28}]{./source/FilippovDU.pdf}
-    \includepdf[pages={30,31,32}]{./source/FilippovDU.pdf}
-    \includepdf[pages={102, 103}]{./source/Stepanov1950ru.pdf}
-    \includepdf[pages={35,36,37,38}]{./source/FilippovDU.pdf}
-    \includepdf[pages={45, 46}]{./source/FilippovDU.pdf}
+    \section{Обыкновенные дифференциальные уравнения}
+    \subsection{Уравнения, допускающие понижение порядка}
+    Порядок ОДУ можно понизить, если оно:
+    \begin{itemize}
+        \item имеет вид $F(y, y', y'', \dots, y^{(n)})$, тогда замена $y' = p(y)$
+        \item имеет вид $F(x, y^{(k)}, \dots, y^{(n)})$, тогда  замена $y^{(k)} = z$
+        \item однородно относительно $y$ и его производных, тогда замена $y' = yz$
+        \item однородно в обобщенном смысле, если оно не меняется от замены $x$ на $kx$, $y$ на $ky$, $y^{(s)}$ на $k^{m-s} y^{(s)}$. 
+        Чтобы найти $m$, надо приравнять друг другу показатели степеней, в которых $m$ будет входить в каждый член уравнения после указанной замены, т.е. $m$ должно удовлетворять каждому уравнению получившейся системы.
+        \begin{equation*}
+            2(k x)^{4}\left(k^{(m-2)} y^{\prime \prime}\right)-3\left(k^{m} y\right)^{2}=(k x)^{4} \Rightarrow 4+(m-2)=2 m=4 \Rightarrow m=2
+        \end{equation*}
+        Затем сделать замену $x = e^t, y = z e^{mt}$, где $t$ новая независимая перменная, а $z(t)$ новая неизвестная функция.
+        \item преобразуется к такому виду, чтобы обе части уравнения являются производными по $x$ от каких-нибудь функций. Не забыть константу интегрирования.
+    \end{itemize}
+
+    \subsection{Линейные уравнения с постоянными коэффициентами}
+    Определитель Вронского:
+    \begin{equation*}
+        W\left[y_{1}, y_{2}, \ldots, y_{n}\right]=\left|\begin{array}{ccccc}
+        y_{1} & y_{2} & & \ldots & y_{n} \\
+        y_{1}^{\prime} & y_{2}^{\prime} & \ldots & y_{n}^{\prime} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        y_{1}^{(n-1)} & y_{2}^{(n-1)} & \cdots & y_{n}^{(n-1)}
+        \end{array}\right|
+    \end{equation*}
+    Матрица Грама:
+    \begin{equation*}
+        \left(y_{i}, y_{j}\right)=\int_{a}^{b} y_{i}(x) y_{j}(x) d x, \quad i, j=1, \ldots, n
+    \end{equation*}
+    Система из $n$ линейно независимых функций линейно независима, если определитель Вронского для системы функций не равен нулю (если равен нулю, то тоже может быть линейное независима, но нужно другие методы использовать!)%, либо определитель матрица Грама равен нулю (необходимое и достаточное).%
+    
+    Рассмотрим ОДУ вида:
+    \begin{equation*}
+        a_{n} y^{(n)}+a_{n-1} y^{(n-1)}+\cdots+a_{1} y^{\prime}+a_{0} y=0
+    \end{equation*}
+    Для нахождения общего решения нужно записать характеристическое уравнение:
+    \begin{equation*}
+        a_{n} \lambda^{n}+a_{n-1} \lambda^{n-1}+\cdots+a_{1} \lambda +a_{0} y=0
+    \end{equation*}
+    Затем найти все его корни, если:
+    \begin{itemize}
+        \item Корень вещественный кратности один, то $C e^{\lambda x}$
+        \item Корень вещественный кратности $k$, то $e^{\lambda x}(C_0 + C_1 x + \dots C_k x^{k-1})$ 
+        \item Корень комплексный кратности один, то $С e^{Re(\lambda)} \cos (Im(\lambda))$ или $Ce^{Re(\lambda)} \sin (Im(\lambda))$. Если перед мнимой частью плюс, то косинус, иначе синус.
+        \item Корень комплексный кратности $k$, то $e^{Re(\lambda)} \cos (Im(\lambda))(C_0 + C_1 x + \dots C_k x^k)$ или $e^{Re(\lambda)} \sin (Im(\lambda))(C_0 + C_1 x + \dots C_k x^{k-1})$
+    \end{itemize}
+
+    Потом выписать общее решение для каждого корня.
+
+    Рассматрим неоднородное уравнение:
+    \begin{equation*}
+        a_{n} y^{(n)}+a_{n-1} y^{(n-1)}+\cdots+a_{1} y^{\prime}+a_{0} y=f(x)
+    \end{equation*}
+   \begin{itemize}
+       \item  Если правая часть имеет специальный вид, то см. таблицу:
+
+    %TODO: перетехать табличку для однородности%
+    \includegraphics[width=\textwidth]{source/nonlineartable.png}
+
+
+    \item Также можно решить методом вариации постоянных через соответствующее однородное решение:
+    $$y(x)=C_{1}(x) y_{1}(x)+C_{2}(x) y_{2}(x)+\cdots+C_{n}(x) y_{n}(x) .$$
+
+    И найти $C_i(x)$ через систему:
+    \begin{equation*}
+        \left\{\begin{array}{c}
+            C_{1}^{\prime} y_{1}+C_{2}^{\prime} y_{2}+\cdots+C_{n}^{\prime} y_{n}=0 \\
+            C_{1}^{\prime} y_{1}^{\prime}+C_{2}^{\prime} y_{2}^{\prime}+\cdots+C_{n}^{\prime} y_{n}^{\prime}=0 \\
+            \vdots \\
+            C_{1}^{\prime} y_{1}^{(n-2)}+C_{2}^{\prime} y_{2}^{(n-2)}+\cdots+C_{n}^{\prime} y_{n}^{(n-2)}=0 \\
+            C_{1}^{\prime} y_{1}^{(n-1)}+C_{2}^{\prime} y_{2}^{(n-1)}+\cdots+C_{n}^{\prime} y_{n}^{(n-1)}=f(x)
+            \end{array}\right.
+    \end{equation*}
+
+    \item Уравнения Эйлера:
+    \begin{equation*}
+        a_{n} x^{n} y^{(n)}+a_{n-1} x^{n-1} y^{(n-1)}+\cdots+a_{1} x y^{\prime}+a_{0} y=f(x)    
+    \end{equation*}
+    Решаются через замену $x = e^t$, частные решения можно искать сразу в виде $y = x^k$.
+\end{itemize}
+
+\subsubsection{Линейные уравнения с переменными коэффициентами}
+Уравнений второго порядка: 
+\begin{equation*}
+    y=\exp \left(-\int \frac{p(x)}{2} d x\right) z
+\end{equation*}
+Формула Остроградского-Лиувилля:
+\begin{equation*}
+    W(x)=W\left(x_{0}\right) \exp \left(-\int_{x_{0}}^{x} \frac{p_{1}(x)}{p_{0}(x)} \mathrm{d} x\right)
+\end{equation*}
+    % TODO: сделать выжимку из всех pdf'ок снизу
+    % \includepdf[pages={11}]{./source/FilippovDU.pdf}
+    % \includepdf[pages={18,19}]{./source/FilippovDU.pdf}
+    % \includepdf[pages={21,22}]{./source/FilippovDU.pdf}
+    % \includepdf[pages={26,27,28}]{./source/FilippovDU.pdf}
+    % \includepdf[pages={30,31,32}]{./source/FilippovDU.pdf}
+    % \includepdf[pages={102, 103}]{./source/Stepanov1950ru.pdf}
+    % \includepdf[pages={35,36,37,38}]{./source/FilippovDU.pdf}
+    % \includepdf[pages={45, 46}]{./source/FilippovDU.pdf}
 \end{document}

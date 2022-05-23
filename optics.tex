@@ -1,0 +1,142 @@
+\documentclass[twoside, a4paperpt, fleqn]{extarticle}
+\usepackage{style}
+
+\begin{document}
+    \section{Оптика}
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item     Показатель преломления среды:
+            \begin{equation*}
+                n = \frac{c}{v} = \frac{c}{\frac{c}{\sqrt{\varepsilon \mu}}} = \sqrt{\varepsilon \mu}
+            \end{equation*}
+            \item Угол падения равен углу отражения.
+            \item С увеличением угла падения увеличивается угол преломления до тех пор, пока при некотором угле падения $\alpha_{pr}$ угол преломления не окажется $\frac{\pi}{2}$. При $\alpha > \alpha_{pr}$ весь падающий свет полностью отражается.
+            \item Закон преломления света (Снеллиуса)
+            \begin{equation*}
+                \frac{\sin \beta}{\sin \beta} = \frac{v_1}{v_2} =  \frac{c / n_1}{c / n_2} = \frac{n_2}{n_1}
+            \end{equation*}
+            \item $D$ оптическая сила линзы, $f$ фокусное расстояние. 
+            Для вогнутой знак $+$, для выпуклой $-$.
+            \begin{equation*}
+                D = \frac{1}{f} = \left( \frac{n_l}{n_c} - 1 \right)\left( \frac{1}{\pm R_1} + \frac{1}{\pm R_2}  \right)
+            \end{equation*}
+            \item Лупа двояковыпуклая линза. Её параметр $\Gamma = \frac{d_u}{f}$ - увеличение лупы, $d_u$ - расстояние наилучшего зрения. $d_u = 0.25$ м - среднее наилучшее расстояние (независимо от типа линзы);
+            \item Излучение и полгащение света происходит не непрерывно, а дискретно, то есть определенными квантами, энергия которых определниется частотой $\nu$.
+            \begin{equation*}
+                \varepsilon_0 = h \nu
+            \end{equation*}
+            \item Оптическая разность хода это как одна волна опережает другую.
+            \item Амплитуда склыдваемых волн:
+            \begin{equation*}
+                A^2 = A_1^2 + A_2^2 + 2 A_1 A_2 \cos \Delta \phi
+            \end{equation*}
+            \item Связь оптической разности хода и разности фаз:
+            \begin{equation*}
+                \frac{\Delta \phi}{\Delta} = \frac{2 \pi}{\lambda}
+            \end{equation*}
+    
+            \item Условие максимума интерференции:
+            \begin{equation*}
+                \Delta = m \lambda, \quad m = \pm 1, \pm 2, \dots
+            \end{equation*}
+            \item Условие минимума интерференции:
+            \begin{equation*}
+                \Delta = \frac{2m+1}{2} \lambda, \quad m = \pm 1, \pm 2, \dots
+            \end{equation*}
+            \item Интерференция на тонких щелях:
+            \begin{equation*}
+                \Delta = n(AB + BC) - 1 \cdot AD = 2d \sqrt{n^2-\sin^2 \alpha} + \frac{\lambda}{2}
+            \end{equation*}
+            \item Интерференция на клине ($\alpha = 0$):
+            \begin{equation*}
+                \Delta = 2 d n + \frac{\lambda}{2}
+            \end{equation*}
+            \item Опыт Юнга:
+            \begin{equation*}
+                \Delta = S_2 - S_1 = \frac{x_m d}{l}, \quad b = x_{m+1} - x_{m} = \frac{\lambda l}{d}
+            \end{equation*}
+            \item Интерференция на кольцах Ньютона ($n=1, \alpha = 0$):
+            \begin{equation*}
+                \Delta = 2d + \frac{\lambda}{2} = \frac{r_m^2}{R} + \frac{\lambda}{2}
+            \end{equation*}
+            \item Метод зон Френеля
+            заключается в том, что фронт волны разбивают на зоны таким 
+            образом, что волны от соседних зон приходят в точку наблюдения 
+            Р в противофазе и гасят друг друга
+            \item Общее число зон, умещающихся на полусфере, очень 
+            велико, поэтому амплитуду от m-й зоны можно выразить через 
+            амплитуды от двух соседних зон через среднее арифметическое
+            \item Результирующая амплитуда в точке наблюдения P от полностью 
+            открытой волновой поверхности равна:
+            \begin{align*}
+                A &= A_1 - A_2 + A_3 - A_4 + \dots \\ &= \frac{A_1}{2} + \left(\frac{A_1}{2} - A_2 + \frac{A_3}{2}\right) + \left(\frac{A_3}{2} - A_4 + \frac{A_5}{2}\right) + \dots = \frac{A_1}{2}
+            \end{align*}
+            \item Расстояние от центра экрана до зоны Френеля:
+            \begin{equation*}
+                b + m \frac{\lambda}{2}
+            \end{equation*}
+            \item Дифракция Френеля (сферическая волна):
+            \begin{equation*}
+                \rho_k = \sqrt{\frac{a b k \lambda}{a + b}}
+            \end{equation*}
+            \item Дифракция Фраундгофера (плоская волна):
+            \begin{equation*}
+                \rho_k = \lim_{a \to \infty} \sqrt{\frac{a b k \lambda}{a + b}} = \sqrt{b k  \lambda}
+            \end{equation*}
+            \item Оптическая разность хода дифракционной решетки, $\phi$ угол отклонения (друг):
+            \begin{equation*}
+                \Delta = d \sin \phi = \begin{cases}
+                    m \lambda  \quad \text{max} \\
+                    \frac{2 m + 1}{2} \lambda \quad \text{min}
+                \end{cases}
+            \end{equation*}
+            \item Разрешающая способность дифракционной решетки (значение минимальной разности длин волн, при котором эти линии регистрируются раздельно), k – порядок спектра, N – общее число 
+            штрихов решетки:
+            \begin{equation*}
+                R = \frac{\lambda}{\Delta \lambda} = m N, \quad N = \frac{L}{d}, \quad mN = \frac{\lambda_2}{\lambda_2 - \lambda_1}
+            \end{equation*}
+            \item Оптическая разность  хода на щели (не друг, попадос подставка аккуратно):
+            \begin{equation*}
+                \Delta = b \sin \phi =  = \begin{cases}
+                    m \lambda  \quad \text{min} \\
+                    \frac{2 m + 1}{2} \lambda \quad \text{max}
+                \end{cases}
+            \end{equation*}
+            \item Дисперсия определяет угловое или линейное расстояния между 
+            двумя спектральными линиями, отличающимися по длине волны 
+            на единицу
+            \item Угловая дисперсия:
+            \begin{equation*}
+                D = \frac{d \phi}{d \lambda} = \frac{k}{d \cos \phi}
+            \end{equation*}
+            \item Интенсивность поляризации:
+            \begin{equation*}
+                I_{\Pi} = 0.5 I_E
+            \end{equation*}
+            \item Закон Малюса (очищенная волна):
+            \begin{equation*}
+                I_A = I_{\Pi} \cos^2 \phi
+            \end{equation*}
+            \item Степень поляризации:
+            \begin{equation*}
+                P = \frac{I_{max} - I_{min}}{I_{max} + I_{min}}
+            \end{equation*}
+            \item Угол Брюстера $n_2$ туда куда попали, $n_1$ откуда:
+            \begin{equation*}
+                \operatorname{tg} \varepsilon_B = \frac{n_2}{n_1} = \frac{\sin \varepsilon_B}{\sin \beta} 
+            \end{equation*}
+        \end{itemize}
+    \end{multicols}
+\begin{table}[h!]
+    \begin{tabular}{cc}
+    Цвет       & Длина волны, нм \\
+    Фиолетовый & 380-440         \\
+    Синий      & 440-485         \\
+    Голубой    & 485-500         \\
+    Зеленый    & 500-565         \\
+    Желтый     & 565-590         \\
+    Оранжевый  & 590-625         \\
+    Красный    & 625-740        
+    \end{tabular}
+    \end{table}
+\end{document}

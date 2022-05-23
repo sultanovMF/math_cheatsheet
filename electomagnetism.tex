@@ -1,0 +1,277 @@
+\documentclass[twoside, a4paperpt, fleqn]{extarticle}
+\usepackage{style}
+
+\begin{document}
+\section*{Электромагнетизм}
+Закон Кулона:
+\begin{equation*}
+    F = \frac{1}{4 \pi \varepsilon_0} \frac{\vert Q_1 Q_2 \vert}{r^2}
+\end{equation*}
+Напряженность электростатического поля:
+\begin{equation*}
+    \vec{E} = \frac{\vec{F}}{Q_0}
+\end{equation*}
+Поток вектора напряженности электростатического поля сковзь замкнутую поверхность $S$:
+\begin{equation*}
+    \label{ phi_E }
+    \Phi_E = \oiint_S \vec{E} d \vec{S}
+\end{equation*}
+Принцип суперпозиции (вообще говоря, экспериментальный факт):
+\begin{equation*}
+    \vec{E} = \sum \vec{E}_i
+\end{equation*}
+Электрический момент диполя:
+\begin{equation*}
+    \vec{p} = |Q| \vec{l}
+\end{equation*}
+Теорема Гаусса для электростатического поля в вакууме:
+\marginpar{см. поток вектора напряженности}
+\begin{equation*}
+    \oiint \vec{E} d \vec{S} = \frac{1}{\varepsilon_0} \sum Q_i
+\end{equation*}
+Объемная, поверхностная и линейная плотности заряда:
+\begin{equation*}
+    \rho = \frac{d Q}{d V}, \quad \sigma = \frac{d Q}{d S}, \quad \tau = \frac{d Q}{ d l}
+\end{equation*}
+Напряженность поля, создаваемого равномерно заряженной бесконечной плоскостью:
+\marginpar[]{Здесь и далее испольузется теорема Гаусса}
+\begin{equation*}
+    E = \frac{\sigma}{2 \varepsilon_0} \quad (2 E S = \frac{\sigma S}{\varepsilon_0})
+\end{equation*}
+\marginpar[]{\includegraphics[scale=0.25]{source/physics/application_gauss_theorem1.png}}
+\marginpar[]{Применить предыдущую формулу два раза}
+Напряженность поля, создаваемого двумя бесконечными паралельными разноименно заряженными плоскостями:
+\begin{equation*}
+    E = \frac{\sigma}{\varepsilon_0}
+\end{equation*}
+Напряженность поля, создаваемого объемно заряженным шаром,
+\begin{equation*}
+E = \frac{1}{4 \pi \varepsilon_0} \frac{Q}{r^2} \quad (r \geq R)
+\end{equation*}
+\begin{equation*}
+    E = \frac{1}{4 \pi \varepsilon_0} \frac{Q}{R^3} r' \quad (r' \leq R)
+\end{equation*}
+Напряженность поля, создаваемого равномерно заряженным бесконечным цилиндром:
+\begin{equation*}
+ E = \frac{1}{ 2 \pi \varepsilon_0} \frac{\tau}{r} \quad (r \geq R) \quad E = 0 \quad (r < R)
+\end{equation*}
+Циркуляция векора напряженности электростатического поля вдоль замнкутого контура $L$:
+\marginpar{Работа по замкнутому контуру не производится, потому что электростатическое поля заряда является потенциальным.}
+\begin{equation*}
+\oint_L \vec{E}{d \vec{l}}= 0
+\end{equation*}
+Потенциал эллектростатического поля:
+\begin{equation*}
+    \phi = \frac{U}{Q_0} = \frac{A_{\infty}}{Q_0}
+\end{equation*}
+Связь между потениалом электростатического поля и его напряженностью:
+\begin{equation*}
+    \vec{E} = - \nabla \phi
+\end{equation*}
+Поляризованность:
+\begin{equation*}
+    \vec{P} = \frac{\sum \vec{p}_i}{V}
+\end{equation*}
+Связь между векторами $\vec{P}$ и $\vec{E}$:
+\begin{equation*}
+    \vec{P} = \ae \varepsilon_0 \vec{E}
+\end{equation*}
+связь между диэлектрической проницаемостью среды и напряженности электростатического поля:
+\begin{equation*}
+    \vec{D} = \varepsilon_0 \varepsilon \vec{E}
+\end{equation*}
+Теорема Гаусса для электростатического поля в диэлектрике:
+\begin{equation*}
+    \oiint \vec{D} d \vec{S} = \sum Q_i
+\end{equation*}
+Электрическая емкость уединенного проводника:
+\marginpar[]{Поскольку $\phi = \int_0^d E d x$, $Q = \sigma S$}
+\begin{equation*}
+    C = \frac{Q}{\phi}
+\end{equation*}
+Электроемкость шара:
+\begin{equation*}
+    C = 4 \pi \varepsilon \varepsilon_0 R
+\end{equation*}
+Электрическая емкость плоского конденсатора:
+\marginpar[]{$\phi = \int_{0}^d E d x$, $Q = $}
+\begin{equation*}
+    C = \frac{\varepsilon \varepsilon_0 S}{d}
+\end{equation*}
+% todo написать формулы конденсаторов для других изощренных видов%
+Электрическая емкость для параллельного соединения:
+\begin{equation*}
+    C = \sum C_i
+\end{equation*}
+Электрическая емкость для последователньо соединенных конденсаторов:
+% todo почему? %
+\begin{equation*}
+    \frac{1}{C} = \sum \frac{1}{C_i}
+\end{equation*}
+Энергия заряженного уединенного проводника:
+\marginpar[]{вывод из мощности $dw = P = UI = \frac{Q d Q}{C dt}$}
+\begin{equation*}
+    W = \frac{C \phi^2}{2} = \frac{Q \phi} {2} = \frac{Q^2}{2 C}
+\end{equation*}
+Энергия заряженного конденсатора:
+\begin{equation*}
+    W = \frac{C \Delta \phi^2}{2} = \frac{Q \Delta \phi} {2} = \frac{Q^2}{2 C}
+\end{equation*}
+%todo подробно расписать классическую теорию электропроводимости и законы в дифференциальной форме %
+Закон Ома для однородного участка цепи:
+\begin{equation*}
+    I = \frac{U}{R}
+\end{equation*}
+Мощность тока:
+\begin{equation*}
+    P = \frac{d A}{d t} = U I = I^2 R = U^2 R
+\end{equation*}
+Закон Джоуля-Ленца:
+\begin{equation*}
+    d Q = I U dt = I^2 R dt = \frac{U^2}{R} dt
+\end{equation*}
+Правила Кирхгофа:
+% todo че это за буква для ЭДС?%
+\begin{equation*}
+    \sum_k I_k = 0; \quad \sum_i I_i R_i = \sum_k \xi_k
+\end{equation*}
+Связь между индукцией и напряженности магнитного поля:
+\begin{equation*}
+    \vec{B} = \mu \mu_0 \vec{H}
+\end{equation*}
+Закон Био-Савара-Лапласа для элемента проводника с током:
+\begin{equation*}
+    d \vec{B} = \frac{\mu \mu_0}{4 \pi} \frac{I [d \vec{l}, \vec{r}]}{r^3}
+\end{equation*}
+Магнитная индукция поля прямого тока:
+\begin{equation*}
+    B = \frac{\mu \mu_0}{4 \pi} \frac{2 I}{2 R}
+\end{equation*}
+Магнитная индукция поля в центре кругового проводника с током:
+
+%todo вывод этих формул %
+\begin{equation*}
+    B = \mu \mu_0 \frac{I} {2 R}
+\end{equation*}
+Сила Лоренца:
+\begin{equation*}
+    \vec{F} = Q [\vec{v}, \vec{B}]
+\end{equation*}
+Закон Ампера:
+\marginpar{Можно интуитивно вывести формулу Ампера из формулы Лоренца, заметив, что $v = l /t, Q / t = I$}
+\begin{equation*}
+    d \vec{F} = I [d \vec{l}, \vec{B}]
+\end{equation*}
+Магнитное поле движущегося заряда:
+\begin{equation*}
+    \vec{B} = \frac{\mu \mu_0}{4 \pi} \frac{Q [\vec{v}, \vec{r}]}{r^3}
+\end{equation*}
+Закон полного тока для магнитного поля в вакууме (теорема о циркуляции вектора $\vec{B}$):
+\begin{equation*}
+    \oint_L \vec{B} d \vec{l} = \mu_0 \sum I_k
+\end{equation*}
+Магнитная индукция поля внутри соленоида в вакууме:
+\marginpar[]{Строим прямоугольник, вне соленоида пренебрегаем, внутри $l B$}
+\begin{equation*}
+    B = \mu \frac{N I}{l}
+\end{equation*}
+Поток вектора магнитной индукции сквозь произвольную поверхность $S$:
+\begin{equation*}
+    \Phi_B = \iint_S \vec{B}{d \vec{S}}
+\end{equation*}
+Теорема Гаусса для поля с магнитной индукцией $\vec{B}$:
+\begin{equation*}
+    \iint \vec{B} d \vec{S} = 0
+\end{equation*}
+Работа по перемещению проводника с током в магнитной поле:
+\begin{equation*}
+    d A = I(d \Phi_2 - d \Phi_1)
+\end{equation*}
+Работа по перемещению замкнутого контура в магнитном поле:
+\begin{equation*}
+    d A = I(d \Phi')
+\end{equation*}
+Закон Фарадея:
+\begin{equation*}
+    \xi_i = - \frac{d \Phi}{d t}
+\end{equation*}
+ЭДС самоиндукции:
+\begin{equation*}
+    \xi_s = - L \frac{d I}{d t}
+\end{equation*}
+Индуктивность бесконечно длинного соленоида, имеющего $N$ витков:
+\begin{equation*}
+    L = \mu_0 \mu \frac{N^2 S}{l}
+\end{equation*}
+Ток при размыкании цепи:
+\begin{equation*}
+    I = I_0 \exp(- \frac{t}{\tau})
+\end{equation*}
+Ток при замыкании цепи:
+\begin{equation*}
+    I = I + (1 - \exp(- \frac{t}{\tau}))
+\end{equation*}
+Энергия магнитного поля, связанного с контуром:
+\begin{equation*}
+    W = \frac{L I^2}{2}
+\end{equation*}
+Закон полного тока для магнитного поля в веществе:
+\begin{equation*}
+    \oint_L \vec{B} d \vec{l} = \mu_0 (I + I')
+\end{equation*}
+Теорема о циркуляции вектора $\vec{H}$:
+\begin{equation*}
+    \oint_L \vec{H} d \vec{l} = I
+\end{equation*}
+Плотность тока смещения:
+\begin{equation*}
+    \vec{j}_{\text{см}} = \frac{\partial \vec{D}}{\partial t} = \varepsilon_0 \frac{\partial \vec{E}}{\partial t} + \frac{\partial \vec{P}}{\partial t}
+\end{equation*}
+Полная система уравнений Максвелла в интегральной форме:
+\begin{equation*}
+    \oint_L \vec{E} d \vec{l} = - \iint_S \frac{\partial \vec{B}}{\partial t} d \vec{S}
+\end{equation*}
+\begin{equation*}
+    \oiint_S \vec{D} d \vec{S} = \iiint_V \rho d V
+\end{equation*}
+\begin{equation*}
+    \oint_L \vec{H} d \vec{l} = \iint_S \left( \vec{j} + \frac{\partial \vec{D}}{\partial t} \right) d \vec{S}
+\end{equation*}
+\begin{equation*}
+    \iint_S \vec{B} d \vec{S} = 0
+\end{equation*}
+Полная система уравнений Максвелла в дифференциальной форме:
+\begin{equation*}
+    \operatorname { rot } \vec{E} = -\frac{\partial \vec{B}}{\partial t}
+\end{equation*}
+\begin{equation*}
+    \operatorname { div } \vec{D} = \rho
+\end{equation*}
+\begin{equation*}
+    \operatorname{ rot } \vec{H} = \vec{j} + \frac{\partial \vec{D}}{\partial t}
+\end{equation*}
+\begin{equation*}
+    \operatorname { div } \vec{B} = 0
+\end{equation*}
+Объемная плотность энергии магнитного поля показывает распредление энергии магнитного  поля (конденсатора) к объему. 
+
+$W = \cfrac{L I^2}{2} $ поскольку для соленоида $I = \cfrac{B l}{\mu \mu_0 N}$, то $W = \cfrac{L I^2}{2} = \cfrac{\Phi I}{2} = \cfrac{B S N I}{2} = \cfrac{B S N B l}{2 \mu \mu_0 N} = \cfrac{B^2 V}{2 \mu_0 \mu } = \cfrac{\mu \mu_0 H^2}{2} V$
+Объемная плотность энергии электромагнитной волны складывается из объемных плотностей электрического $w_{\text{эл}}$ и магнитного полей $w_{\text{м}}$:
+\marginpar[]{объемные плотности магнитного и электрического полей в начальный момент времени одинаковы}
+\begin{equation*}
+    w = w_{\text{эл}} + w_{\text{м}} = \frac{\varepsilon \varepsilon_0 E^2}{2} + \frac{\mu \mu_0 H^2}{2}
+\end{equation*}
+Вектор Умова-Пойтинга (плотность потока энергии), напрвлен в сторону распространения электромагнитной волны:
+\begin{equation*}
+    \vec{S} = [ \vec{E}, \vec{H}]
+\end{equation*}
+Электромагнитная волна обладает импульсом (W - энергия которую несет волна):
+\begin{equation}
+    p = \frac{W}{c}
+\end{equation}
+
+Длина волны и период колебаний конутра:
+\begin{equation*}
+    T = \frac{\lambda}{c}
+\end{equation*}
+\end{document} 
